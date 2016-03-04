@@ -1,0 +1,11 @@
+<?php
+	$GLOBALS['TL_JQUERY'][] = '<link rel="stylesheet" href="http://www.schachbundesliga.de/sites/all/themes/seven_sbl/php/css/custom.css"/>';
+	$GLOBALS['TL_JQUERY'][] = '<link rel="stylesheet" href="http://www.schachbundesliga.de/sites/all/themes/seven_sbl/php/css/bootstrap.min.css">';
+	$GLOBALS['TL_JQUERY'][] = '<script type="text/javascript" src="http://www.schachbundesliga.de/sites/all/themes/seven_sbl/php/js/jquery.bootstrap.newsbox.js"></script>';
+?>
+
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+	
+	<script type="text/javascript" src="http://www.schachbundesliga.de/sites/all/themes/seven_sbl/php/sbl_newsticker.php?design=<?= $this->design ?>&amp;anzahl_beitraege=<?= $this->beitraege ?>&amp;headlinecolor=<?= $this->headlinecolor ?>&amp;backgroundcolor=<?= $this->backgroundcolor ?><?php if ($this->blank): ?>&amp;target=_blank<?php endif; ?>"></script>
+
+</div> 
